@@ -1,0 +1,16 @@
+[package]
+name = "z-stack"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures = "0.3.29"
+tokio = "1.34.0"
+tokio-serial = { version = "5.4.4", features = ["libudev"] }
+tokio-util = { version = "0.7.10", features = ["codec"] }
+
+[dev-dependencies]
+tokio = { version = "1.34.0", features = ["io-std", "rt-multi-thread", "macros"] }
+anyhow = "1.0.75"

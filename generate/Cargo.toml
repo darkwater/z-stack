@@ -1,0 +1,15 @@
+[package]
+name = "generate"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+heck = "0.4.1"
+pest = "2.7.5"
+pest_derive = "2.7.5"
+quote = "1.0.33"
+serde = { version = "1.0.193", features = ["derive"] }
+serde_json = { version = "1.0.108", features = ["preserve_order"] }
+syn = { version = "2.0.39", features = ["full"] }
